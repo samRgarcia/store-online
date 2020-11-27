@@ -1,0 +1,16 @@
+<input type="text" [(ngModel)]="title">
+{{title}}
+<input type="text" [(ngModel)]="power">
+{{power |exponential}}
+
+
+<div [ngSwitch]="title">
+  <p *ngSwitchCase="'sam'">it is sam</p>
+  <p *ngSwitchCase="'miriam'">it is mirian</p>
+  <p *ngSwitchCase="'cleo'">she is cleo</p>
+  <p *ngSwitchDefault>is not match</p>
+</div>
+
+<div *ngIf="title ==='sam'">
+el es {{title}}
+</div>

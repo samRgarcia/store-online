@@ -1,7 +1,7 @@
-<app-header></app-header>
+
 <div class="product-grid" >
     <app-product 
-    *ngFor="let item of product" 
+    *ngFor="let item of products" 
     (productCliked)="clickProduct($event)"
      [product]="item"></app-product>
   </div>
